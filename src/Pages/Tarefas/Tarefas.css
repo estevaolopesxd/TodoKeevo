@@ -1,0 +1,351 @@
+.tarefas {
+    padding-top: 15px;
+    border-top: 0.5px solid #ccc;
+    height: 100vh;
+    width: 100%;
+    margin-top:-50px ;
+}
+
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.filter {
+    display: flex;
+    justify-content: start;
+    font-size: 1.5em;
+
+
+    margin: 0;
+    padding: 0;
+    margin-top: -5px;
+    align-items: center;
+}
+
+.filter a {
+    text-decoration: none;
+    padding-left: 16px;
+    color: rgb(124, 131, 142);
+}
+
+.filters .around {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    padding-left: 35px;
+}
+
+.filters .around a {
+    text-decoration: none;
+    color: white;
+    margin-left: -25%;
+}
+
+.around .col-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -65px;
+}
+
+.around .col-3 a{
+    cursor: default;
+}
+
+.around .status {
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    margin-top: 2px;
+    margin-right: 75px;
+    margin-left: 20px;
+}
+
+
+.status.progress {
+    background-color: #3c79d6;
+}
+
+.status.completed {
+    background-color: #55dd4a;
+}
+
+.status.nextTask {
+    background-color: #ffc123;
+}
+
+.status.paused {
+    background-color: #e84040;
+}
+
+
+.tasks.row.col-3 {
+    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.filters.container {
+    display: flex;
+    /* height: 100vh; */
+    justify-content: space-between;
+    background-color: var(--bg-content);
+}
+
+.filter a.active {
+    color: white;
+    font-size: 1em;
+    transition: ease-in-out;
+   
+}
+
+.iconNewTask{
+    position: fixed;
+    left: 94%;
+    top: 90%;
+
+}
+
+.iconNewTask .circle {
+    background-color: var(--bg-secundary);
+    border-radius: 50%;
+    height: 45px;
+    width: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 3px 4px #2b2b2b;
+}
+
+.iconNewTask .circle .fa-plus{
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+
+.iconNewTask .circle:hover{
+    position: fixed;
+    top:89.7%;
+    transition: ease-in-out;
+}
+
+@media (max-width: 576px){
+    
+    .tarefas{
+        border:none;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:-50px ;
+  
+    }
+
+    .tarefas .filter {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tarefas .filters {
+        display: none;
+    }
+    .iconNewTask{
+        left: 83%;
+    }
+
+    .tasks {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        /* justify-content: center; */
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    /* onde muda a direção dos cards */
+    .row{
+        display: flex;
+        width: 100%;
+        /* height: 100%; */
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        /* background-color: red; */
+       
+        
+    }
+
+    .col-3{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+
+    }
+}
+
+
+@media ((min-width: 568px) and (max-width: 779px))  {
+
+    .tarefas{
+        border:none;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:-50px ;
+  
+    }
+
+    .tarefas .filter {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tarefas .filters {
+        display: none;
+    }
+    .iconNewTask{
+        left: 85%;
+    }
+
+    .tasks {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        /* justify-content: center; */
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    /* onde muda a direção dos cards */
+    .row{
+        display: flex;
+        width: 100%;
+        /* height: 100%; */
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        /* background-color: red; */
+       
+        
+    }
+
+    .col-3{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+
+    }
+  }
+  
+
+
+  @media ((min-width: 780px) and (max-width: 960px))  {
+
+
+   
+    .tarefas .filter {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        font-size: 1.2em;
+    }
+    
+    .tarefas .filters {
+        display: none;
+    }
+    .iconNewTask{
+        left: 90%;
+    }
+
+    .tasks {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    /* onde muda a direção dos cards */
+    .row{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+       
+    }
+
+    .col-3{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+
+    }
+
+  }
+
+
+  @media ((min-width: 961px) and (max-width: 1200px))  {
+  
+    .tarefas .filter {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        font-size: 1.2em;
+    }
+    
+
+    .tarefas .filters {
+        display: none;
+    }
+
+    .iconNewTask{
+        left: 90%;
+    }
+
+
+    .tasks {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    
+
+    .row{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        /* margin: 0 auto; */
+       
+    }
+
+    .col-3{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+
+    }
+
+  
+  }
+
+  @media (min-width: 1200px){
+    
+    .iconNewTask{
+        left: 90%;
+    }
+
+  }

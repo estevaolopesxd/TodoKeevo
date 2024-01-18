@@ -1,0 +1,157 @@
+:root {
+  --bg-primary: rgb(27, 27, 27);
+  --bg-secundary: rgb(106, 89, 212);
+  --bg-content:rgb(35, 37, 41);
+  --color-primary: rgb(237, 237, 237);
+  --color-secundary: rgb(106, 89, 212);
+  --color-text: rgb(71, 75, 82);
+  --color-subtitle: rgb(124, 131, 142);
+}
+.list div i {
+  margin-left: 30px;
+}
+
+.list div i:hover {
+  cursor: pointer;
+}
+
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color:var(--bg-content);
+
+ 
+}
+
+
+
+.content {
+  margin-top: 80px;
+  width: 100%;
+  /* height: 100vh; */
+
+}
+
+
+h1 {
+  color: var(--color-primary);
+}
+
+p.subTitle {
+  padding-top: 15px;
+  color: var(--color-subtitle);
+  font-size: 1.3em;
+}
+
+a{
+  color: var(--color-secundary);
+}
+
+
+
+
+ /* menu */
+.menu {
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 100vh;
+  position: absolute;
+  text-align: start;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+
+.content-open {
+  width: calc(100% - 350px);
+  /* Ajusta a largura do conteúdo para ocupar 100% menos a largura do menu */
+  margin-left: 350px;
+  /* Isso empurra o conteúdo para a direita, deixando espaço para o menu */
+  transition: width 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  margin-top: 790px;
+  margin-left: 290px;
+  font-size: 1.5em;
+  position: absolute;
+  color: var(--color-secundary);
+}
+
+.menu {
+  transform: translateX(-90%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu.open {
+  transform: translateX(0);
+}
+
+.subMenu {
+  color: var(--color-secundary);
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+p.subTitle a {
+  color: var(--color-subtitle);
+  text-decoration: none;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-decoration: none;
+}
+
+.list a {
+  color: var(--color-text);
+  text-decoration: none;
+  padding-left: 15px;
+  font-size: 1.2em;
+}
+
+.list a:hover {
+  border-left: 5px var(--color-secundary) solid;
+  border-radius: 5px;
+  letter-spacing: 1.3px;
+}
+
+.list a:active {
+  border-left: 5px var(--color-secundary) solid;
+  border-radius: 5px;
+  color: var(--color-secundary);
+}
+
+.list div i {
+  margin-left: 15px; 
+}
+
+
+@media (max-width: 567px) {
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+}
+
+
+@media ((min-width: 568px) and (max-width: 700px))  {
+
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+}

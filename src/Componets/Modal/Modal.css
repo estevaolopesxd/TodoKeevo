@@ -1,0 +1,56 @@
+.modal{
+    display: flex;
+    text-align: justify;
+
+    
+}
+
+h1{
+ color: white;
+}
+
+
+.modal-content{
+    width: 600px;
+    color: white;
+    background-color: rgb(124, 131, 142);
+ 
+}
+
+
+.fade{
+    transition: opacity .15s linear;
+}
+
+.modal-footer button.btn{
+    background-color: rgb(106, 89, 212);
+}
+
+
+@media (max-width: 576px){
+
+    .modal-content{
+        width: 400px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 50px;
+     
+    }
+}
+
+
+@media ((min-width: 568px) and (max-width: 779px))  {
+
+    .modal-content{
+        width: 550px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 50px;
+     
+    }
+
+}

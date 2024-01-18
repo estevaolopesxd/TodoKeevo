@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a i{
+    color: rgb(106, 89, 212);
+}
+:root {
+    --bg-primary-card:rgb(42, 45, 50);
+}
+
+div.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 200px;
+    width: 300px;
+    margin: 10px 0px 15px 15px; 
+    background-color: var(--bg-primary-card);
+    color: white;
+    box-shadow: 2px 2px 4px 2px #1b1b1b;
+    position: inherit;
+}
+
+
+
+.headerTask{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.descriptionCard{
+    width: 90%;
+    min-height: 150px;
+    margin: 0 auto;
+
+}
+
+.dropdown-menu{
+    background-color: var(--bg-primary-card);
+}
+
+.dropdown-menu li:hover{
+    background-color: rgb(124, 131, 142);
+}
+
+.dropdown-item{
+    color: white;
+}
+
+.footerCard {
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 15px;
+    margin: 0 auto;
+    width: 80%;
+    /* margin-bottom: 4px; */
+}
+
+.footerCard p{
+    padding-top: 10px;
+}
+
+
+.footerCard .fa-check {
+    margin-left: 10px;
+    margin-top: -5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icons .fa-check:hover{
+    color: #55dd4a;
+}
+
+
+#sttCompleted{
+    color: #55dd4a;
+}
+
+#sttCompleted i{
+    cursor: default;
+}
+
+#sttCompleted .fa-check:hover{
+    color: white;
+
+}
+
+.status-card {
+    display: flex;
+    justify-content: space-around;
+    width: 210px;
+    align-items: center;
+}
+
+.iconsCard {
+    font-size: 15px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons .fa-calendar-days {
+    padding-right: 5px;
+}
+
+@media (max-width: 576px) {
+        div.card{
+            display: flex;
+            flex-direction: column;
+            
+        }
+}
